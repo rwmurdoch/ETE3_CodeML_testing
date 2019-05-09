@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # this script loops through trees and trimmed alignments in their own directories
 # and then subjects them to LRT testing using the ETE3 codeML/src implementation
 # this script does NOT parse the LRT results, which are in the stout file
@@ -10,13 +8,13 @@
 
 
 
-for f in /genestree/*
+for f in /genes/*
 	do
 	gene=${f##*/}
 	mkdir "results_genetree_12/$gene"
 	ete3 evol \
-	-t /genestree/$gene \
-	--alg /genesalign/"${gene}.trim" \
+	-t /genes.tree/"${gene}.tree" \
+	--alg /genes.align/"${gene}.align" \
 	--models M1 M2 \
 	--tests M1,M2 \
 	--codeml_param verbose,0 \
