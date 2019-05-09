@@ -17,4 +17,4 @@ using the M2 vs M1 and M8 vs M7 tests.
 
 For reasons that I do not understand, when using the "ete3 evol" command, the -t and --alg commands require *explicit* filepaths, relative to working directory does not work.
 
-*replace the -t and --alg switches with explicit filepaths for your project**
+*replace the -t and --alg switches with explicit filepaths for your project*
