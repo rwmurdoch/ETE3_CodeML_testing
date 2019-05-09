@@ -10,13 +10,13 @@
 
 
 
-for f in /genestree/*
+for f in /genes/*
 	do
 	gene=${f##*/}
 	mkdir "results_genetree_M0/$gene"
 	ete3 evol \
-	-t /genestree/$gene \
-	--alg /genesalilgn/"${gene}.trim" \
+	-t /genes.tree/"${gene}.tree" \
+	--alg /genes.align/"${gene}.align" \
 	--models M0 \
 	--codeml_param verbose,0 \
 	-i "results_genetree_M0/$gene/image.png" \
