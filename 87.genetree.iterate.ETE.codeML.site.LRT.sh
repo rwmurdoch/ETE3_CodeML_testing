@@ -10,13 +10,13 @@ export PATH=~/anaconda_ete/bin:$PATH
 
 
 
-for f in /genestree/*
+for f in /genes/*
 	do
 	gene=${f##*/}
 	mkdir "results_genetree_87/$gene"
 	ete3 evol \
-	-t /genestree/$gene \
-	--alg /genesalign/"${gene}.trim" \
+	-t /genes.tree/"${gene}.tree" \
+	--alg /genes.align/"${gene}.align" \
 	--models M8 M7 \
 	--tests M7,M8 \
 	--codeml_param verbose,0 \
