@@ -12,3 +12,9 @@ The folders must be in the same directory where the script is executed from and 
 
 Three scripts are provided, one which measure dN/dS via the M0 model, and two which detect site-based positive selection
 using the M2 vs M1 and M8 vs M7 tests.  
+
+## Script editing
+
+For reasons that I do not understand, when using the "ete3 evol" command, the -t and --alg commands require *explicit* filepaths, relative to working directory does not work.
+
+*replace the -t and --alg switches with explicit filepaths for your project**
