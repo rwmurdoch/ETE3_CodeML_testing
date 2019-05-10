@@ -18,3 +18,7 @@ using the M2 vs M1 and M8 vs M7 tests.
 For reasons that I do not understand, when using the "ete3 evol" command, the -t and --alg commands require *explicit* filepaths, relative to working directory does not work.
 
 *replace the -t and --alg switches with explicit filepaths for your project*
+
+## output
+
+A folder containing all of the results will be generated, a subfolder for each gene tested.  The scripts parse the critical results files and create a csv formatted table with the ML tree scores and p-values.  This script does not apply a false-discovery rate correction; this should be performed afterwards (simple to do with R).
