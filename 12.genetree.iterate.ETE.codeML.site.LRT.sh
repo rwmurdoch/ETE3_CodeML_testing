@@ -2,7 +2,7 @@
 # and then subjects them to LRT testing using the ETE3 codeML/src implementation
 # this script does NOT parse the LRT results, which are in the stout file
 
-# This script should be run from the same folder where the folder containing the gene trees and alignments are
+# This script should be run from the same folder where the folder containing the gene trees and alignments
 
 # export PATH=~/anaconda_ete/bin:$PATH
 
